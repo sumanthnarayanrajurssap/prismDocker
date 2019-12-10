@@ -367,9 +367,9 @@ ENV ZAL_VER="3.141.59w" \
 
 COPY entry.sh log warn error /usr/bin/
 COPY nginx.conf error.html /home/seluser/
-COPY zalenium-master/css/ /home/seluser/css/
-COPY zalenium-master/js/ /home/seluser/js/
-COPY zalenium-master/img/ /home/seluser/img/
+COPY bootstrap.min.css dashboard.css /home/seluser/css/
+COPY bootstrap.bundle.min.js dashboard.js jquery.min.js tether.min.js /home/seluser/js/
+COPY apple.png browserstack.png build.png chrome.png completed.png crossbrowsertesting.png failed.png firefox.png iexplore.png lambdatest.png linux.png microsoftedge.png retention-date.png safari.png saucelabs.png screen-resolution.png success.png testingbot.png timeout.png timezone.png windows.png zalenium.png /home/seluser/img/
 COPY zalenium.sh \
  LICENSE.md \
  Analytics.md \
