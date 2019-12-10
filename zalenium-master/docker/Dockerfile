@@ -367,9 +367,9 @@ ENV ZAL_VER="3.141.59w" \
 
 COPY entry.sh log warn error /usr/bin/
 COPY nginx.conf error.html /home/seluser/
-COPY css/ /home/seluser/css/
-COPY js/ /home/seluser/js/
-COPY img/ /home/seluser/img/
+COPY zalenium-master/docs/ /home/seluser/css/
+COPY zalenium-master/docs/js/ /home/seluser/js/
+COPY zalenium-master/docs/img/ /home/seluser/img/
 COPY zalenium.sh \
  LICENSE.md \
  Analytics.md \
